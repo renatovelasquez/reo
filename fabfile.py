@@ -36,7 +36,7 @@ USER_HOME = "%s/%s" % ("/webapps", APP["user"]) # /webapps/user
 
 SERVERS = {
     "production": {
-        "domain": "54.86.232.209",
+        "domain": "104.131.37.126",
         "ssh_port": "22",
         "branch": "master",
         },
