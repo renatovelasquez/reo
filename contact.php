@@ -1,6 +1,6 @@
 <?php 
-$emailTo = 'revelsix@gmail.com';
-$siteTitle = 'CONTACTO';
+$emailTo = 'krizalida.ren@gmail.com';
+$siteTitle = 'CONTACTO REVELSIX';
 
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
