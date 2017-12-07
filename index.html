@@ -604,11 +604,11 @@ SCRIPTS
 
     function saveToFirebase() {
         var contactObject = {
-            name: document.getElementById('contact-name'),
-            email: document.getElementById('contact-mail'),
-            message: document.getElementById('contact-message')
+            name: document.getElementById('contact-name').value,
+            email: document.getElementById('contact-mail').value,
+            message: document.getElementById('contact-message').value
         };
-        firebase.database().ref('subscription-entries').push().set(contactObject)
+        firebase.database().ref('contact-entries').push().set(contactObject)
             .then(function (snapshot) {
                 success(); // some success method
             }, function (error) {
