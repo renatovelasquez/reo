@@ -481,8 +481,8 @@ CONTACT
                 <address>
                     revel<strong>six</strong><br>
                     +(591) 73296144<br>
-                    rvelasquez@revelsix.com<br>
-                    http://revelsix.com<br>
+                    velasquez.renato@hotmail.com<br>
+                    https://renatovelasquez.github.io/<br>
                     <!--上海交通大学东川路800号-->
                 </address>
 
@@ -494,7 +494,7 @@ CONTACT
 
             <!--=== Contact Form ===-->
 
-            <form id="contact-form" class="col-sm-7 scrollimation fade-left" action="contact.php" method="post" novalidate>
+            <form id="contact-form" class="col-sm-7 scrollimation fade-left" method="post" novalidate>
 
                 <div class="form-group">
                     <label class="control-label" for="contact-name">Name</label>
@@ -607,9 +607,9 @@ SCRIPTS
             email: email
         };
         firebase.database().ref('subscription-entries').push().set(emailObject)
-            .then(function(snapshot) {
+            .then(function (snapshot) {
                 success(); // some success method
-            }, function(error) {
+            }, function (error) {
                 console.log('error' + error);
                 error(); // some error method
             });
