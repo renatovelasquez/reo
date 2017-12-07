@@ -602,11 +602,13 @@ SCRIPTS
     ga('create', 'UA-71344510-1', 'auto');
     ga('send', 'pageview');
 
-    function saveToFirebase(email) {
-        var emailObject = {
-            email: email
+    function saveToFirebase() {
+        var contactObject = {
+            name: document.getElementById('contact-name'),
+            email: document.getElementById('contact-mail'),
+            message: document.getElementById('contact-message')
         };
-        firebase.database().ref('subscription-entries').push().set(emailObject)
+        firebase.database().ref('subscription-entries').push().set(contactObject)
             .then(function (snapshot) {
                 success(); // some success method
             }, function (error) {
@@ -615,7 +617,7 @@ SCRIPTS
             });
     }
     var submit = document.getElementsByTagName('submit')[0];
-    submit.onclick = saveToFirebase('velasquez.renato@hotmail.com');
+    submit.onclick = saveToFirebase();
 </script>
 </body>
 </html>
